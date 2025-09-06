@@ -1,4 +1,4 @@
-import * as S from './style.tsx'
+import * as S from './style.ts'
 import SvgDoubleAvata from "@assets/icon/components/SvgDoubleAvata.tsx";
 
 
