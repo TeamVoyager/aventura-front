@@ -3,6 +3,8 @@ import AIPartner from '@pages/message'
 import Profile from '@pages/menu'
 import Management from '@pages/management'
 import History from '@pages/history'
+import Login from "@pages/login"
+import Register from "@pages/register";
 
 const App = () => {
   return (
@@ -12,6 +14,8 @@ const App = () => {
         <Route path="/menu" element={<Profile />} />
         <Route path="/management" element={<Management />} />
         <Route path="/history" element={<History />} />
+        <Route path="/login" element={<Login/>} />
+        <Route path="/register" element={<Register/>} />
       </Routes>
     </BrowserRouter>
   )
