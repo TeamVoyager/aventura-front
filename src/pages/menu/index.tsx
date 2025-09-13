@@ -4,6 +4,8 @@ import SvgProfile from '@assets/icon/components/SvgProfile'
 import SvgSettings from '@assets/icon/components/SvgSettings'
 import SvgUser from '@assets/icon/components/SvgUser'
 import SvgEdit from '@assets/icon/components/SvgEdit'
+import {useNavigate} from "react-router-dom";
+
 
 interface OptionButtonProps {
   icon: React.ReactNode;
@@ -22,6 +24,13 @@ const OptionButton = ({ icon, label, onClick }: OptionButtonProps) => (
 );
 
 const Profile = () => {
+
+  const navigate = useNavigate();
+
+  const handleEdit = () => {
+    // step2로 이동하면서 데이터 전달
+    navigate("/ProfileEdit");
+  }
   return (
     <S.Container>
 
@@ -45,7 +54,8 @@ const Profile = () => {
           <S.OptionsContainer>
             <OptionButton 
               icon={<SvgProfile />} 
-              label="프로필 설정" 
+              label="프로필 설정"
+              onClick={handleEdit}
             />
             <S.Divider />
             <OptionButton 
