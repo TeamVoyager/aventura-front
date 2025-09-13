@@ -35,9 +35,13 @@ const Profile = () => {
                 <SvgEdit />
               </S.EditButton>
             </S.ProfileImageContainer>
-            <S.UserName>사용자_1</S.UserName>
+            <S.Nav>
+              <S.UserName>사용자_1</S.UserName>
+              <S.Text>
+                t86662998@gmail.com
+              </S.Text>
+            </S.Nav>
           </S.ProfileSection>
-
           <S.OptionsContainer>
             <OptionButton 
               icon={<SvgProfile />} 

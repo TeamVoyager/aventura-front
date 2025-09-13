@@ -6,6 +6,7 @@ import History from '@pages/history'
 import Login from "@pages/login"
 import Register from "@pages/register";
 import Register2 from "@pages/register/index2.tsx"
+import ProfileEdit from "@pages/profiieEdit";
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
         <Route path="/login" element={<Login/>} />
         <Route path="/register" element={<Register/>} />
         <Route path="/register2" element={<Register2/>} />
+        <Route path="/ProfileEdit" element={<ProfileEdit/>} />
 
       </Routes>
     </BrowserRouter>
