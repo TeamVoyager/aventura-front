@@ -1,12 +1,14 @@
 import * as S from './style'
 import SvgDoubleAvata from "@assets/icon/components/SvgDoubleAvata.tsx";
-
-
+import SvgNotice from "@assets/icon/components/SvgNotice";
+import {useState} from "react";
 
 
 
 const Login = () =>{
-    return (
+
+  const [wrongLogin, setWrongLogin] = useState(true);
+  return (
 
         <S.Container>
             <S.Main>
@@ -17,16 +19,6 @@ const Login = () =>{
                     </S.Title>
                 </S.Content>
                 <S.Content>
-                  <S.InputSection>
-                    <S.Text>
-                      이름
-                    </S.Text>
-                    <S.InputContainer>
-                      <S.Input placeholder="이름을 입력해주세요">
-
-                      </S.Input>
-                    </S.InputContainer>
-                  </S.InputSection>
                   <S.InputSection>
                     <S.Text>
                       이메일
@@ -47,6 +39,9 @@ const Login = () =>{
                       </S.Input>
                     </S.InputContainer>
                   </S.InputSection>
+                  <S.FooterNav>
+                    {wrongLogin && (<><SvgNotice/><S.AlertTText>비밀번호 또는 이메일이 일치하지 않습니다</S.AlertTText></>)}
+                  </S.FooterNav>
                 </S.Content>
               <S.Content>
                 <S.SubmitButton>

@@ -193,19 +193,31 @@ export const SubmitButton = styled.button`
     }
 `;
 
-export const GotoRegister = styled.a`
+export const Nav = styled.div`
+    display: flex;
+    
+    align-items: center;
+    gap: 12px;
+    width: 100%;
+`;
+
+export const AlertTText = styled.div`
     display: flex;
     align-items: center;
+    gap: 0.5rem;
     font-family: 'Pretendard', sans-serif;
     font-weight: 400;
-    font-size: 14px;
-    color: #5CB7A5;
+    font-size: 16px;
+    color: red;
+    line-height: 1.5rem;
 
     @media (min-width: 768px) {
-        font-size: 16px;
+        font-size: 18px;
+        line-height: 1.75rem;
     }
     @media (min-width: 1024px) {
-        font-size: 18px;
+        font-size: 20px;
+        line-height: 2rem;
     }
 `;
 
